@@ -1,0 +1,56 @@
+.problems{
+    background-image: linear-gradient(to bottom,$primary-text-color 76%,#FBFBFB 24%);
+    padding-top: 24px;
+}
+
+.container{
+    @extend %container
+}
+
+.section__title{
+    @include font(800, 24px, 1.31, 0.03em);
+    margin-bottom: 24px;
+
+    color: $primary-white-color;
+
+    &--accent {
+        color: $accent-color;
+    }
+}
+
+.list-container{
+    background-color: $primary-white-color;
+    padding: 20px 24px 24px 32px;
+    box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+}
+
+.problems-list {
+    counter-reset: section;  
+}
+.problems-list__item {
+    @include font(700, 14px, 1.71, 0.08em);
+    position: relative;
+    margin-bottom: 16px;
+
+
+        &::before{
+            margin-left: 28px;
+            margin-bottom: 5px;
+            color: $accent-color;
+            counter-increment: section;                 /* Инкрементирует счётчик*/
+            content: "0" counter(section) ;
+            }
+
+        &::after{
+            content: '';
+            display:block;
+            width: 20px;
+            height: 2px;
+            background: $accent-color;
+            position: absolute;
+            top: 10;
+            left: 0;
+            }
+}
+.problems-list__article {
+}

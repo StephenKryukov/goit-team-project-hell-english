@@ -1,0 +1,82 @@
+.how-list__icon{
+    display: block;
+    fill: $accent-color;
+    height: 48px;
+    width: 60px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
+        .how-list__item:hover &, .how-list__item:focus &{
+            fill: $primary-white-color;    
+        }
+}
+
+.section{
+    @extend %section;
+}
+
+.how-section{
+    background-color: #FBFBFB;
+}
+.container__title{
+    @extend %container__title;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.how-list {
+    margin-bottom: -16px;
+}
+
+.how-list__item {
+    padding: 32px 11px 0px 11px;
+    width: 280px;
+    height: 280px;
+
+    margin-bottom: 16px;
+    background-color: $primary-white-color;
+    box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
+
+    &:hover, &:focus{
+        background-color: $accent-color;
+    }
+    
+}
+
+.how-list__title {
+    @include font(700, 14px, 1.43, 0.08em);
+    text-align: center;
+    margin-bottom: 40px;
+
+        .how-list__item:hover &, .how-list__item:focus &{
+         color: $primary-white-color;
+        }
+}
+.how-list__article {
+    @include font(500, 12px, 1.67, 0.08em);
+    position: relative;
+    color: $secondary-text-color;
+    text-align: center;
+
+
+        &::before{
+            content: '';
+            position: absolute;
+            display:block;
+            top: -20;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 20px;
+            height: 2px;
+            background: $accent-color;  
+        }
+        
+        .how-list__item:hover &, .how-list__item:focus &{
+            color: $primary-white-color;    
+           }
+
+        .how-list__item:hover &::before, .how-list__item:focus &::before{
+            background-color: $primary-white-color;    
+           }
+        }        
