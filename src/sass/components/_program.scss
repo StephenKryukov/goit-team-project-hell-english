@@ -1,0 +1,98 @@
+.program {
+
+	@extend %section;
+	background-color: #111518;
+
+	&__container {
+			position: relative;
+		@extend %container;
+		padding-left: 88px;
+	}
+	
+	&__title {
+		font-weight: 800;
+		font-size: 20px;
+			line-height: 1.3;
+			letter-spacing: 0.03em;
+		margin-bottom: 40px;
+		color: $primary-white-color;
+	}
+
+	&__unit {
+		position: relative;
+		margin-bottom: 40px;
+	}
+	
+	&__header {
+		font-weight: 700;
+			font-size: 14px;
+			line-height: 2;
+			letter-spacing: 0.08em;
+			text-transform: uppercase;
+			color: $primary-white-color;
+			margin-bottom: 4px;
+	}
+	
+	&__list {
+		background-color: #111518;
+	}
+
+		&__item {
+			margin-bottom: 4px;
+	}
+		&__item:last-child {
+			margin-bottom: 0;
+		}
+
+	&__element {
+		display: flex;
+		align-items: center;
+		height: 32px;
+		font-weight: 700;
+		font-size: 12px;
+		line-height: 1.65;
+		letter-spacing: 0.08em;
+		color: $accent-color;
+	
+	}
+
+	&__text {
+	width: 140px;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 1.67;
+	letter-spacing: 0.08em;
+	color: #B9B9B9;
+	opacity: 0.5;
+	}
+
+		&__text-fourth-semester{
+			@extend .program__text;
+			width: 176px;
+		}
+
+	&__line {
+		position: absolute;
+		border-right: 1px solid #FFFFFF;
+		height: 1190px;
+		top: 82px;
+		left: 62px;
+	}
+
+	&__circle {
+		position: absolute;
+		width: 12px;
+		height: 12px;
+		top: 8px;
+		left: -32px;
+		border-radius: 50%;
+			background: #FF6B09;
+			z-index: 10;
+	}
+
+
+
+
+
+
+}
