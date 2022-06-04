@@ -42,4 +42,12 @@ body {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
 }
+
+.program {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 130%;
+}
 /*# sourceMappingURL=main.css.map */
