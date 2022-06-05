@@ -1,39 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hell English</title>
 
-<head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Hell English</title>
-	
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap"
-		rel="stylesheet" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css">
-	<link rel="stylesheet" href="./sass/main.scss" />
-</head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./sass/main.scss" />
+    <link rel="stylesheet" href="./sass/main.css" />
+  </head>
 
-<body>
+  <body>
+    <!-- Фрагменты HTML-страниц -->
+    <include src="./partials/header.html"></include>
+    <include src="./partials/hero.html"></include>
+    <include src="./partials/advantages.html"></include>
+    <include src="./partials/problems.html"></include>
+    <include src="./partials/how-we-do-it.html"></include>
+    <include src="./partials/program.html"></include>
+    <include src="./partials/benefits.html"></include>
+    <include src="./partials/about.html"></include>
+    <include src="./partials/guarantee.html"></include>
+    <include src="./partials/reviews.html"></include>
+    <include src="./partials/contacts.html"></include>
+    <include src="./partials/footer.html"></include>
 
-	<!-- Фрагменты HTML-страниц -->
-	<include src="./partials/header.html"></include>
-	<include src="./partials/hero.html"></include>
-	<include src="./partials/advantages.html"></include>
-	<include src="./partials/problems.html"></include>
-	<include src="./partials/how-we-do-it.html"></include>
-	<include src="./partials/program.html"></include>
-	<include src="./partials/benefits.html"></include>
-	<include src="./partials/about.html"></include>
-	<include src="./partials/guarantee.html"></include>
-	<include src="./partials/reviews.html"></include>
-	<include src="./partials/contacts.html"></include>
-	<include src="./partials/footer.html"></include>
+    <!----------------------------------Teacher----------------------------->
+    <section class="section teacher-section">
+      <div class="container teacher-container">
+        <div class="teacher__wrap">
+          <h2 class="teacher__title section-title">Teacher</h2>
+          <picture>
+            <source
+              srcset="
+                ../img/teacher-photo-desk-1x.jpg 1x,
+                ../img/teacher-photo-desk-2x.jpg 2x
+              "
+              media="(min-width: 1680px)"
+            />
+            <source
+              srcset="
+                ../img/teacher-photo-tab-1x.jpg 1x,
+                ../img/teacher-photo-tab-2x.jpg 2x
+              "
+              media="(min-widht:768px)"
+            />
+            <source
+              srcset="
+                ../img/teacher-photo-mob-1x.jpg 1x,
+                ../img/teacher-photo-mob-2x.jpg 2x
+              "
+              media="(min-widht:480px)"
+            />
+            <img
+              src="../img/teacher-photo-desk-1x.jpg"
+              alt="учитель"
+              class="teacher__photo"
+            />
+          </picture>
+        </div>
+        <div class="teacher-about__wrap">
+          <h3 class="teacher-title__secondary">Elena Morozova</h3>
+          <ul>
+            <li>
+              <p class="teacher__text">
+                6 yeards of experience in preparing students for UPE
+              </p>
+            </li>
+            <li>
+              <p class="teacher__text">
+                Own result of passing VNO - 197 points 2 years in a row
+              </p>
+            </li>
+            <li>
+              <p class="teacher__text">
+                Passed excellent at the international analogue of UPE -
+                Cambridge PET (Preliminary English Test)
+              </p>
+            </li>
+          </ul>
+          <p class="about__text regular-before">
+            Graduated from the Institute of International Relations of the NAU
+            with a degree in translator-analyst.
+          </p>
+          <p class="about__text">
+            In spare time takes courses from the best universities in the world
+            on effective teaching and essay writing techniques.
+          </p>
+          <p class="about__text">
+            Completed: English Grammar and Essay Writing (Berkeley), English
+            Grammar & Style (The University of Queesland), How to Write an Essay
+            (Berkeley), Academic and Business Writing (Berkeley), The Art of
+            Teaching (GEMS education), Powerful Tools for Teaching and Learning
+            (University of Houston).
+          </p>
+          <a href="" class="about__link"
+            >Cambrige English Entry Level Certificate</a
+          >
+        </div>
+      </div>
+    </section>
 
+    <!-- ---------------------------------------Guarantee------------------------>
+    <section class="section guarantee">
+      <div class="container">
+        <h2 class="guarantee__title">We guarantee</h2>
+        <div class="container__wrap">
+          <ul class="guarantee__list">
+            <li class="guarantee__item">
+              <p class="guarantee__text">
+                You will pass the UPE with at least 25 points better than on the
+                first practice test. Otherwise, we will refund your money.
+              </p>
+            </li>
 
-	<!-- Скрипты -->
-	<script src="./index.js" type="module"></script>
-	
-</body>
+            <li class="guarantee__item">
+              <p class="guarantee__text">
+                You will learn to write essays with at least 10 points out of
+                14.
+                <span>While 20% of the students received 0 for essays.</span>
+              </p>
+            </li>
+            <li class="guarantee__item">
+              <p class="guarantee__text">
+                You will study in your area. We will choose the location for the
+                classes after the teams have been formed.
+              </p>
+            </li>
+            <li class="guarantee__item">
+              <p class="guarantee__text">
+                Teams will be formed based on the starting level of the
+                students. We take into account the characteristics of each
+                student.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
+    <!-- Скрипты -->
+    <script src="./index.js" type="module"></script>
+  </body>
 </html>
-
