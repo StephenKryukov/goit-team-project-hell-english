@@ -4,21 +4,35 @@
     @media screen and (min-width:$tablet){
         padding-top: 40px;
         }   
+
+        @media screen and (min-width:$desktop){
+            padding-top: 80px;
+            background-image:url(../../images/svg/burn-bg.svg),linear-gradient(to bottom,$primary-text-color 76%,#FBFBFB 24%);
+            background-size: 445px 472px, contain;
+            background-repeat: no-repeat;
+            background-position: 100% 29%, center;
+            }     
 }
 
 .container{
-    @extend %container
+    @extend %container;
+
+
+    
 }
 
 .section__title{
-    @include font(800, 24px, 1.31, 0.03em);
+    @extend %container__title;
     margin-bottom: 24px;
-
     color: $primary-white-color;
 
     @media screen and (min-width:$tablet){
         margin-bottom: 40px;
         }   
+        
+    @media screen and (min-width:$desktop){
+        margin-bottom: 80px;
+        }  
 
     &--accent {
         color: $accent-color;
@@ -33,6 +47,10 @@
         @media screen and (min-width:$tablet){
             padding: 32px 80px 32px 80px;
     }
+
+        @media screen and (min-width:$desktop){
+            padding: 60px 140px;
+    }
 }
 
 .problems-list {
@@ -42,6 +60,13 @@
             flex-wrap: wrap;
             margin-left: -40px;
     }
+
+    @media screen and (min-width:$desktop){
+        display:flex;
+        flex-wrap: wrap;
+        margin-left: -80px;
+        
+}
 }
 .problems-list__item {
     @include font(700, 14px, 1.71, 0.08em);
@@ -53,6 +78,12 @@
        margin-left: 40px;
        margin-bottom: 8px;
 }
+    @media screen and (min-width:$desktop){
+        @include font(700, 20px, 1.2, 0.08em);
+        flex-basis: calc(100%/3 - 85px); 
+        margin-left: 85px;
+        margin-bottom: 40px;
+    }
 
 
         &::before{
@@ -75,4 +106,7 @@
             }
 }
 .problems-list__article {
+    @media screen and (min-width:$desktop){
+        margin-top: 15px;
+    }
 }
