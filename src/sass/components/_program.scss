@@ -29,10 +29,16 @@
   }
 
   &__block {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 185px;
+    }
+
     @media screen and (min-width: $desktop) {
+      position: relative;
       display: flex;
       flex-wrap: wrap;
       padding-left: 140px;
+      margin-bottom: 100px;
     }
   }
 
@@ -191,6 +197,29 @@
       top: 230px;
       left: 0;
     }
+  }
+
+  &__picture {
+    position: absolute;
+    bottom: -185px;
+    left: 62px;
+    width: 182px;
+    opacity: 0.5;
+
+    @media screen and (min-width: $tablet) {
+      bottom: 0;
+      left: 396px;
+      width: 276px;
+    }
+    @media screen and (min-width: $desktop) {
+      bottom: -100px;
+      left: 140px;
+      width: 500px;
+    }
+  }
+
+  &__image {
+    border-radius: 7px;
   }
 
   &__circle {
