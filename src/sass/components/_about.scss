@@ -1,0 +1,91 @@
+.container {
+  @extend %container;
+}
+
+.section {
+  @extend %section;
+}
+
+.section-title {
+  @extend %container__title;
+  color: $primary-text-color;
+  margin-bottom: 20px;
+}
+
+.teacher-container {
+  @media screen and(min-width:768px) {
+    display: flex;
+  }
+}
+
+.teacher__wrap {
+  margin-right: 60px;
+}
+
+.teacher__title {
+  @media screen and(min-width:768px) and (max-width: 1680px) {
+    padding-left: 8px;
+  }
+}
+
+.title__secondary {
+  margin-bottom: 28px;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.08em;
+  color: $primary-text-color;
+}
+
+.teacher-title__secondary::after {
+  content: '';
+  margin-top: 8px;
+  margin-bottom: 20px;
+  display: block;
+  width: 280px;
+  border-bottom: 1px solid #b9b9b9;
+}
+
+.teacher__photo {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.teacher__text {
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: 0.06em;
+  color: $primary-text-color;
+
+  &::before {
+    content: '';
+    display: inline-block;
+    width: 18px;
+    height: 14px;
+    background-image: url(/img/Group.svg);
+  }
+}
+
+.regular-before::before {
+  margin-bottom: 20px;
+  @extend %regular-before;
+}
+
+.about__text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.67;
+  color: $secondary-text-color;
+}
+
+.about__link {
+  margin-top: 8px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.67;
+  text-decoration-line: underline;
+  text-decoration: underline;
+  color: $accent-color;
+}
