@@ -99,6 +99,34 @@
         </ul>
         <div class="program__circle"></div>
       </div>
+      <picture class="program__picture">
+        <source
+          srcset="
+            ./images/program/program-des-x1.jpg 1x,
+            ./images/program/program-des-x2.jpg 2x
+          "
+          media="(min-width: 1680px)"
+        />
+        <source
+          srcset="
+            ./images/program/program-tab-x1.jpg 1x,
+            ./images/program/program-tab-x2.jpg 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            ./images/program/program-mob-x1.jpg 1x,
+            ./images/program/program-mob-x2.jpg 2x
+          "
+          media="(min-width: 320px)"
+        />
+        <img
+          class="program__image"
+          src="./images/program/program-des-x1.jpg"
+          alt="Lesson with a teacher"
+        />
+      </picture>
     </div>
     <div class="program__line"></div>
   </div>
