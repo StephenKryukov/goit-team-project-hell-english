@@ -3,7 +3,9 @@
 @import './utils/placeholder';
 @import './utils/buttons';
 
-@import './components/header';
+@import './components/header/header';
+@import './components/header/container';
+@import './components/header/menu';
 @import './components/hero';
 @import './components/advantages';
 @import './components/problems';
