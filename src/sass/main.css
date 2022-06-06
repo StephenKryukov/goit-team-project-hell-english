@@ -31,7 +31,6 @@ img {
   max-width: 100%;
   height: auto;
 }
-
 a {
   display: block;
   max-width: 100%;
@@ -39,7 +38,7 @@ a {
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-style: normal;
 }
 
@@ -166,14 +165,6 @@ body {
   color: #111518;
 }
 
-.teacher__text::before {
-  content: '';
-  display: inline-block;
-  width: 18px;
-  height: 14px;
-  background-image: url(/img/Group.svg);
-}
-
 .regular-before::before {
   margin-bottom: 20px;
 }
@@ -191,7 +182,7 @@ body {
   font-size: 12px;
   line-height: 1.67;
   -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
+  text-decoration-line: underline;
   text-decoration: underline;
   color: #ff6b09;
 }
@@ -225,7 +216,7 @@ body {
   position: absolute;
   left: -31px;
   height: 20px;
-  background-image: url(/img/fire-icon.svg);
+  background-image: url(../images/icons/fire-icon.svg);
 }
 
 .guarantee__text {
