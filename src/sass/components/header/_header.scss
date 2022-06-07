@@ -64,6 +64,7 @@
     border: 2px solid $accent-color;
     text-transform: uppercase;
     color: $accent-color;
+    cursor: pointer;
     @media screen and (max-width: 767px) {
       width: 100%;
 
@@ -89,6 +90,7 @@
   &__link {
     color: $primary-white-color;
     transition: color 250ms linear;
+    cursor: pointer;
 
     @media screen and (min-width: 1680px) {
       color: $secondary-text-color;
