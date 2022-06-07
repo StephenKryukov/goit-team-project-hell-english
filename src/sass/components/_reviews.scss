@@ -3,11 +3,11 @@
 
   &__container {
     @extend %container;
-    outline: 1px solid red;
+    box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
 
-    @media screen and (min-width: $tablet) {
-    }
     @media screen and (min-width: $desktop) {
+      padding-left: 200px;
+      padding-right: 200px;
     }
   }
 
@@ -31,13 +31,14 @@
   }
 
   &__picture {
+    position: relative;
     display: flex;
     flex-direction: column;
     @media screen and (min-width: $tablet) {
-      margin-left: 30px;
+      margin-left: 40px;
     }
     @media screen and (min-width: $desktop) {
-      margin-left: 300px;
+      margin-left: 120px;
     }
   }
 
@@ -98,6 +99,9 @@
     letter-spacing: 0.08em;
     color: #b9b9b9;
     margin-bottom: 16px;
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 20px;
+    }
     @media screen and (min-width: $desktop) {
       font-size: 14px;
       line-height: 1.21;
@@ -121,25 +125,6 @@
   }
 }
 
-.swiper-pagination-bullet {
-  width: 50px;
-  height: 50px;
-  background-position: center;
-  background-size: cover;
-}
-
-.swiper-pagination-bullet:first-child {
-  background-image: url(../images/feedback/lady.jpg);
-}
-
-.swiper-pagination-bullet:nth-child(4) {
-  background-image: url(../images/feedback/lady.jpg);
-  overflow: hidden;
-}
-.swiper-pagination-bullet:last-child {
-  background-color: red;
-}
-
 .swiper {
   width: 100%;
   height: 100%;
@@ -152,40 +137,78 @@
   height: 600px;
 
   @media screen and (min-width: $tablet) {
-    height: 300px;
+    height: 350px;
   }
-  @media screen and (min-width: $tablet) {
-    height: 450px;
+  @media screen and (min-width: $desktop) {
+    height: 400px;
   }
 }
 .swiper-button-next {
-  color: $accent-color;
-  right: 0;
+  position: absolute;
+  top: 45px;
+  right: 10px;
+  color: #b9b9b9;
+  @media screen and (min-width: $tablet) {
+    top: 98px;
+    right: 0;
+  }
+  @media screen and (min-width: $desktop) {
+    right: 145px;
+  }
 }
 .swiper-button-next::after {
   content: '\2192';
-  //overflow: visible;
-  //z-index: 15;
-  font-size: 50px;
+  font-size: 30px;
+}
+.swiper-button-next:hover {
+  color: $accent-color;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .swiper-button-prev {
-  color: $accent-color;
-  left: 0;
+  position: absolute;
+  top: 45px;
+  left: 10px;
+  color: #b9b9b9;
+  @media screen and (min-width: $tablet) {
+    top: 98px;
+    left: 0;
+  }
 }
 
 .swiper-button-prev::after {
   content: '\2190';
-  font-size: 20px;
+  font-size: 30px;
 }
 
-//.swiper-slide img {
-//  display: block;
-//  width: 100%;
-//  height: 100%;
-//  object-fit: cover;
-//}
+.swiper-button-prev:hover {
+  color: $accent-color;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
-.swiper {
-  margin-left: auto;
-  margin-right: auto;
+.swiper-pagination-bullet {
+  width: 50px;
+  height: 50px;
+  background-position: center;
+  background-size: cover;
+}
+.swiper-pagination-bullet:first-child {
+  background-image: url(../images/feedback/lady1.jpg);
+}
+.swiper-pagination-bullet:nth-child(2) {
+  background-image: url(../images/feedback/lady2.jpg);
+}
+.swiper-pagination-bullet:nth-child(3) {
+  background-image: url(../images/feedback/lady3.jpg);
+}
+.swiper-pagination-bullet:nth-child(4) {
+  background-image: url(../images/feedback/lady4.jpg);
+}
+.swiper-pagination-bullet:nth-child(5) {
+  background-image: url(../images/feedback/lady5.jpg);
+}
+.swiper-pagination-bullet:nth-child(6) {
+  background-image: url(../images/feedback/lady6.jpg);
+}
+.swiper-pagination-bullet:nth-child(7) {
+  background-image: url(../images/feedback/lady7.jpg);
 }
