@@ -85,6 +85,9 @@
   @media screen and (min-width: 768px) {
     margin-bottom: 50px;
   }
+  @include desktop {
+    width: 530px;
+  }
 }
 
 .teacher__item {
@@ -138,8 +141,10 @@
     line-height: 2;
   }
   @include desktop {
+    margin-bottom: 25px;
     font-size: 18px;
     line-height: 1.56;
+    width: 668px;
   }
 }
 
