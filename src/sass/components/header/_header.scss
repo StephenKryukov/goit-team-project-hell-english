@@ -10,6 +10,11 @@
       height: 29px;
     }
 
+    @media screen and (max-width: 1680px) {
+      width: 128px;
+      height: 45px;
+    }
+
     transition: opacity 100ms linear;
   }
 

@@ -15,10 +15,21 @@
   @media screen and (min-width: 768px) {
     width: 376px;
     height: 321px;
-    margin-bottom: 85px;
+    margin-bottom: 0px;
 
     background-image: url(../images/program/hero-background-tab.png),
       url(../images/program/hero-background-grey-tab.png);
+    background-position: 73% 47%, 0% 35%;
+  }
+
+  @media screen and (min-width: 1680px) {
+    margin-bottom: 0;
+
+    width: 842px;
+    height: 719px;
+
+    background-image: url(../images/program/hero-background-desc.png),
+      url(../images/program/hero-background-grey-desc.png);
     background-position: 73% 47%, 0% 35%;
   }
 }
