@@ -45,6 +45,9 @@
   @include tablet {
     padding-top: 50px;
   }
+  @include desktop {
+    padding-top: 75px;
+  }
 }
 
 .teacher-title__secondary {
