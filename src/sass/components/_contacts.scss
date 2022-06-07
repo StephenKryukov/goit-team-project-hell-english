@@ -120,18 +120,18 @@
         margin-bottom: 20px;
         outline: none;
         @include font (600, 14px, 1.21, 0.08em);
-        font-weight: 600;
-        line-height: 1.21;
+        // font-weight: 600;
+        // line-height: 1.21;
         
-        letter-spacing: 0.08em;
+        // letter-spacing: 0.08em;
 
-        color: #FFFFFF;
+        color: $primary-white-color;
         background-color: transparent;
         padding-left: 28px;
         
-        border: 1px solid #FFFFFF;
+        border: 1px solid $primary-white-color;
         &::placeholder {
-        color: #FFFFFF;
+        color: $primary-white-color;
         }
 
         @include desktop {
@@ -147,31 +147,25 @@
         height: 48px;
         margin-top: 20px;
 
-        background-color: #FF6B09;
+        background-color: $accent-color;
         border: none;
         cursor: pointer;
         
-        
-        font-weight: 700;
-        font-size: 12px;
-        line-height: 1.25;
+        @include font (700, 12px, 1.25, 0.08em);
         align-items: center;
         text-align: center;
-        letter-spacing: 0.08em;
         text-transform: uppercase;
-
-        color: #FFFFFF;
+        color: $primary-white-color;
         @include tablet {
             margin-top: 12px;
         }
         @include desktop {
             margin-top: 8px;
+            @include font (null, 14px, 1.21, 0.14em);
             height: 70px;
-            font-size: 14px;
-            line-height: 1.21;
-            letter-spacing: 0.14em;
-            
-            
+            // font-size: 14px;
+            // line-height: 1.21;
+            // letter-spacing: 0.14em;
         }
     }
 }
