@@ -1,13 +1,21 @@
 .program {
   @extend %section;
   padding-bottom: 0;
-  background-image: linear-gradient(to bottom,$primary-text-color 90%,#FBFBFB 10%);
+  background-image: linear-gradient(
+    to bottom,
+    $primary-text-color 90%,
+    #fbfbfb 10%
+  );
   @media screen and (min-width: $desktop) {
     position: relative;
   }
 
   @media screen and (min-width: $tablet) {
-    background-image: linear-gradient(to bottom,$primary-text-color 85%,#FBFBFB 15%);
+    background-image: linear-gradient(
+      to bottom,
+      $primary-text-color 85%,
+      #fbfbfb 15%
+    );
   }
 
   &__container {
@@ -247,7 +255,7 @@
   }
 }
 
-.list__title{
+.list__title {
   @extend %container__title;
   color: $primary-white-color;
   text-align: start;
@@ -263,20 +271,20 @@
 
   @media screen and (min-width: $desktop) {
     position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
   }
 }
 
-.program .list-container{
+.program .list-container {
   @media screen and (min-width: $desktop) {
-  margin-top: 140px;
+    margin-top: 140px;
   }
 }
