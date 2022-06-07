@@ -1,0 +1,47 @@
+.card-set {
+}
+
+.card-set__item {
+  display: flex;
+  align-items: center;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.64;
+  letter-spacing: 0.08em;
+  color: $primary-text-color;
+
+  &:not(:last-child) {
+    margin-bottom: 24px;
+  }
+}
+
+.card-set__item--icon-one::before {
+  content: '';
+
+  margin-right: 12px;
+
+  width: 60px;
+  height: 62px;
+  background-image: url(../images/program/man.svg);
+}
+
+.card-set__item--icon-two::before {
+  content: '';
+
+  margin-right: 12px;
+
+  width: 60px;
+  height: 62px;
+  background-image: url(../images/program/smartphone.svg);
+}
+
+.card-set__item--icon-three::before {
+  content: '';
+
+  margin-right: 12px;
+
+  width: 60px;
+  height: 62px;
+  background-image: url(../images/program/dollar.svg);
+}
