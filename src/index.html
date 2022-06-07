@@ -15,13 +15,14 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./sass/main.scss" />
-    <link rel="stylesheet" href="./sass/main.css" />
   </head>
 
   <body>
     <!-- Фрагменты HTML-страниц -->
-    <include src="./partials/header.html"></include>
-    <include src="./partials/hero.html"></include>
+    <div class="waves">
+      <include src="./partials/header.html"></include>
+      <include src="./partials/hero.html"></include>
+    </div>
     <include src="./partials/advantages.html"></include>
     <include src="./partials/problems.html"></include>
     <include src="./partials/how-we-do-it.html"></include>
@@ -36,5 +37,7 @@
     <!-- Скрипты -->
     <script src="./index.js" type="module"></script>
     <script src="./modal.js"></script>
+    <script src="./JS/header-menu.js"></script>
+    <script src="./JS/menu-btn.js"></script>
   </body>
 </html>

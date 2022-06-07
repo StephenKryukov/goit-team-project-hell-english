@@ -1,0 +1,16 @@
+.hero-section {
+  @extend %section;
+}
+
+.waves {
+  background-image: url(../images/program/vector12.png);
+}
+
+.hero__flex-wrapper {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.test {
+}
