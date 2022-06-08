@@ -2,7 +2,7 @@
       <div class="container page-header__container">
       <div class="flex-wrapper header__flex-wrap">
         <a href="./index.html"><img src="./images/program/logo.svg" alt="Логотип" class="page-header__logo" header-logo/></a>
-        <button type="button" class="page-header__tub-button">consultation by phone</button>
+        <button type="button" class="page-header__tub-button" data-modal-open_form-mobile >consultation by phone</button>
         <button type="button" class="menu-button" data-menu-button aria-expanded="false" aria-controls="mobile-menu"> 
               <svg width="22" height="12">
                 <use href="../images/spite.svg#icon-menu" class="page-header__icon-menu"></use>
@@ -24,6 +24,66 @@
               <li class="page-header__item"><a href="" class="page-header__link">Contacts</a></li>
             </ul>
           </nav>
-      <button type="button" class="page-header__button">consultation by phone</button>
+      <button type="button" class="page-header__button" data-modal-open_form >consultation by phone</button>
       </div>
+
+      <div class="backdrop is-hidden_form" data-modal_form data-modal_form-mobile>
+        <div class="modal">
+          <button class="modal__button--close modal__button--close--form" type="button">
+            <svg class="modal__button--icon--white">
+              <use href="./images/icons/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <div class="contacts__container-form">
+            <h2 class="contacts__title">
+              Registration for a <span class="accent">free</span> phone
+              <span class="accent">consultation</span> on the nuances of English UPE
+            </h2>
+            <p class="contacts__description">
+              Leave a request for participation in a <span class="accent">free lesson</span>. <br />
+              A consultant will contact you and answer your questions
+            </p>
+            <form class="contacts__form">
+              <label class="contacts__label" for="">
+                <input class="contacts__input" type="text" name="" id="" placeholder="Name*" />
+              </label>
+              <label class="contacts__label" for="">
+                <input class="contacts__input" type="text" name="" id="" placeholder="Phone*" />
+              </label>
+              <button class="contacts__button">і want a free lesson</button>
+            </form>
+          </div>
+
+          <!-- <div class="backdrop is-hidden_form-mobile" data-modal_form-mobile>
+            <div class="modal">
+              <button class="modal__button--close modal__button--close--form" type="button" data-modal-close_form-mobile>
+                <svg class="modal__button--icon--white">
+                  <use href="./images/icons/icons.svg#icon-close"></use>
+                </svg>
+              </button>
+              <div class="contacts__container-form">
+                <h2 class="contacts__title">
+                  Registration for a <span class="accent">free</span> phone
+                  <span class="accent">consultation</span> on the nuances of English UPE
+                </h2>
+                <p class="contacts__description">
+                  Leave a request for participation in a <span class="accent">free lesson</span>. <br />
+                  A consultant will contact you and answer your questions
+                </p>
+                <form class="contacts__form">
+                  <label class="contacts__label" for="">
+                    <input class="contacts__input" type="text" name="" id="" placeholder="Name*" />
+                  </label>
+                  <label class="contacts__label" for="">
+                    <input class="contacts__input" type="text" name="" id="" placeholder="Phone*" />
+                  </label>
+                  <button class="contacts__button">і want a free lesson</button>
+                </form>
+              </div> -->
+            
+        
+      </div>
+      </div>
+      
     </header>
+    
