@@ -5,7 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hell English</title>
+
     <link rel="shortcut icon" type="image/png" href="./favicon.png" />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <script src="./JS/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
+    />
 
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap"
@@ -20,8 +34,10 @@
 
   <body>
     <!-- Фрагменты HTML-страниц -->
-    <include src="./partials/header.html"></include>
-    <include src="./partials/hero.html"></include>
+    <div class="waves">
+      <include src="./partials/header.html"></include>
+      <include src="./partials/hero.html"></include>
+    </div>
     <include src="./partials/advantages.html"></include>
     <include src="./partials/problems.html"></include>
     <include src="./partials/how-we-do-it.html"></include>
@@ -36,5 +52,9 @@
     <!-- Скрипты -->
     <script src="./index.js" type="module"></script>
     <script src="./modal.js"></script>
+    <script src="./modal-form.js"></script>
+    <script src="./modal-form-mobile.js"></script>
+    <script src="./JS/header-menu.js"></script>
+    <script src="./JS/menu-btn.js"></script>
   </body>
 </html>
