@@ -1,7 +1,8 @@
 <header class="page-header" dark-theme>
       <div class="container page-header__container">
       <div class="flex-wrapper header__flex-wrap">
-        <a href="./index.html"><img src="./images/program/logo.svg" alt="Логотип" class="page-header__logo" header-logo/></a>
+        <a href="./index.html"><img src="./images/program/logo.svg" alt="Логотип" class="page-header__logo" header-logo dark-theme-logo/></a>
+        <a href="./index.html"><img src="./images/program/logo-mobile-menu.svg" alt="Логотип" class="page-header__logo-dark-theme" dark-theme-logo-two/></a>
         <button type="button" class="page-header__tub-button" data-modal-open_form-mobile >consultation by phone</button>
         <button type="button" class="menu-button" data-menu-button aria-expanded="false" aria-controls="mobile-menu"> 
               <svg width="22" height="12">
@@ -25,9 +26,12 @@
             </ul>
           </nav>
       <button type="button" class="page-header__button" data-modal-open_form >consultation by phone</button>
-      <button type="button" class="switch-theme" dark-theme-button >
-        <svg width="25" height="25">
-          <use href="./images/icons/ic.svg"></use>
+      <button type="button" class="theme-toggle" dark-theme-button >
+        <svg viewBox="0 0 24 24" width="30" height="30" class="toggle-on">
+          <use href="./images/spite.svg#toggle-on"></use>
+        </svg>
+        <svg viewBox="0 0 24 24" width="30" height="30" class="toggle-off">
+          <use href="./images/spite.svg#toggle-off"></use>
         </svg>
       </button>
       </div>

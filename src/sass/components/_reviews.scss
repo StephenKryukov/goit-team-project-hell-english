@@ -212,3 +212,11 @@
 .swiper-pagination-bullet:nth-child(7) {
   background-image: url(../images/feedback/lady7.jpg);
 }
+
+// ----Dark Theme
+.reviews.dark-theme .reviews__container {
+  @media screen and (min-width: 1680px) {
+    background-color: $primary-white-color;
+    padding-top: 40px;
+  }
+}

@@ -282,7 +282,7 @@
     white-space: nowrap;
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
-    overflow: hidden;;
+    overflow: hidden;
   }
 }
 
@@ -290,4 +290,10 @@
   @media screen and (min-width: $desktop) {
     margin-top: 140px;
   }
+}
+
+// ------- Dark Theme
+.program.dark-theme {
+  position: relative;
+  background-image: linear-gradient(#111518 85%, #111518 15%);
 }
