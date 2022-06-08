@@ -1,0 +1,31 @@
+.back_to_top {
+    position: fixed;
+    bottom: 300px;
+    right: 30px;
+    z-index: 9999;
+    border: 5px solid $secondary-text-color;
+    fill: $teacher-color;
+    padding: 5px;
+    opacity: 0.4;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    @include tablet {
+      width: 50px;
+      height: 50px;
+    }
+    cursor: pointer;
+    display: none;
+  }
+  
+  .back_to_top:hover {
+    border-color: $accent-color;
+    fill: $accent-color;
+    opacity: 0.8;
+  }
+  
+  .back_to_top-show {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
