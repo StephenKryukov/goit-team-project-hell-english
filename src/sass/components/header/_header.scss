@@ -10,7 +10,7 @@
       height: 29px;
     }
 
-    @media screen and (max-width: 1680px) {
+    @media screen and (min-width: 1680px) {
       width: 128px;
       height: 45px;
     }
@@ -70,6 +70,12 @@
     text-transform: uppercase;
     color: $accent-color;
     cursor: pointer;
+
+    &:hover {
+      background-color: $accent-color;
+      color: $primary-white-color;
+      transition: background-color 250ms linear, color 250ms linear;
+    }
     @media screen and (max-width: 767px) {
       width: 100%;
 
@@ -78,6 +84,12 @@
       font-size: 12px;
       line-height: 1.25;
       letter-spacing: 0.08em;
+
+      &:hover {
+        color: $accent-color;
+        background-color: $primary-white-color;
+        transition: background-color 250ms linear;
+      }
     }
     @media screen and (min-width: 768px) and (max-width: 1679px) {
       display: none;
@@ -150,6 +162,13 @@
     font-size: 14px;
     line-height: 1.214;
     letter-spacing: 0.14em;
+
+    &:hover {
+      background-color: $accent-color;
+      color: $primary-white-color;
+    }
+
+    transition: background-color 250ms linear, color 250ms linear;
 
     @media screen and (min-width: 1680px) {
       display: none;
