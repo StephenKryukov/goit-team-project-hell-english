@@ -99,8 +99,8 @@
     display: inline-block;
     width: 18px;
     height: 14px;
-    // background-image: url(../images/icons/group.svg);
-    background-image: url(../images/icons/fire-icon.svg);
+    background-size: contain;
+    background-image: url(../images/icons/check.svg);
   }
 
   &:not(:last-child) {
