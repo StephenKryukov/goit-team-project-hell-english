@@ -156,8 +156,8 @@
             border-color: $accent-color;
             color: $accent-color;
         }
-        
-        
+        transition: background-color 250ms linear, color 250ms linear,
+    border-color 250ms linear;
         
         @include font (700, 12px, 1.25, 0.08em);
         align-items: center;
