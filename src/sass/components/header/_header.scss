@@ -101,6 +101,8 @@
       font-size: 14px;
       line-height: 1.214;
       letter-spacing: 0.14em;
+
+      margin-right: 40px;
     }
   }
 
@@ -174,4 +176,60 @@
       display: none;
     }
   }
+}
+
+// ----------------------------------------------------------------Dark Theme Elements---------------------------------------------------------------------------------------------------------
+
+.dark-theme-logo {
+  display: none;
+}
+
+.page-header__logo-dark-theme {
+  width: 128px;
+  height: 45px;
+  display: none;
+}
+
+.page-header__logo-dark-theme.is-open {
+  display: inline-flex;
+}
+
+.theme-toggle {
+  cursor: pointer;
+  @media screen and (min-width: 1680px) {
+    background-color: transparent;
+    padding: 0;
+    border: none;
+  }
+}
+
+.toggle-off {
+  display: none;
+}
+
+.theme-toggle {
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.theme-toggle.is-open-button {
+  color: $primary-white-color;
+  background-color: #ffffff20;
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.theme-toggle.is-open-button .toggle-off {
+  display: inline-flex;
+}
+
+.theme-toggle.is-open-button .toggle-on {
+  display: none;
 }
