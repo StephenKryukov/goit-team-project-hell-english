@@ -121,6 +121,7 @@
         &::placeholder {
         color: $primary-white-color;
         }
+        
 
         @include desktop {
             height: 70px;
@@ -128,6 +129,10 @@
             margin-bottom: 32px;
             font-size: 20px;
         
+        }
+        &:not(:placeholder-shown):required:invalid {
+            border-color: #e73f3f;
+            box-shadow: 1px 5px 5px #e73f3f;
         }
     }
     &__button {
@@ -162,3 +167,4 @@
 .accent {
     color: $accent-color;
 }
+
