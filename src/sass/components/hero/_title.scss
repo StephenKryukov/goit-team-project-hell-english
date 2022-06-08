@@ -14,16 +14,13 @@
   }
 
   @media screen and (min-width: 1680px) {
-    display: none;
+    width: 560px;
+    font-size: 50px;
   }
 }
 
-.hero__title-desc {
-  @media screen and (min-width: 1680px) {
-    display: inline-flex;
-
-    width: 560px;
-
-    font-size: 50px;
+.hero-br {
+  @media screen and (max-width: 1679px) {
+    display: none;
   }
 }
