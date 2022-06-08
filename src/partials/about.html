@@ -67,9 +67,20 @@
         education), Powerful Tools for Teaching and Learning (University of
         Houston).
       </p>
-      <a href="" class="about__link"
-        >Cambrige English Entry Level Certificate</a
-      >
+      <button type="button" class="about__button--certificate" data-modal-open>
+        Cambridge English Entry Level Certificate
+      </button>
     </div>
   </div>
 </section>
+
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button class="modal__button--close" type="button" data-modal-close>
+      <svg class="modal__button--icon">
+        <use href="./images/icons/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+    <img src="./images/certificate/certificate.jpg" alt="certificate" />
+  </div>
+</div>
