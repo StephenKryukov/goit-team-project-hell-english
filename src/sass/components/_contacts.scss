@@ -130,8 +130,9 @@
             font-size: 20px;
         
         }
-        &:invalid {
-            border-color: rgb(229, 142, 142);
+        &:not(:placeholder-shown):required:invalid {
+            border-color: #e73f3f;
+            box-shadow: 1px 5px 5px #e73f3f;
         }
     }
     &__button {
