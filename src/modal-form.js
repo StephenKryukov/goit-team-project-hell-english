@@ -1,8 +1,8 @@
 (() => {
   const refs = {
-    openModalBtn: document.querySelector('[data-modal-open]'),
-    closeModalBtn: document.querySelector('[data-modal-close]'),
-    modal: document.querySelector('[data-modal]'),
+    openModalBtn: document.querySelector('[data-modal-open_form]'),
+    closeModalBtn: document.querySelector('.modal__button--close--form'),
+    modal: document.querySelector('[data-modal_form]'),
     body: document.querySelector("body"),
   };
 
@@ -10,7 +10,7 @@
   refs.closeModalBtn.addEventListener('click', toggleModal);
 
   function toggleModal() {
-    refs.modal.classList.toggle('is-hidden');
+    refs.modal.classList.toggle('is-hidden_form');
     refs.body.classList.toggle("no-scroll");
   }
 })();
