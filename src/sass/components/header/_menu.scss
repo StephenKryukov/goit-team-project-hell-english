@@ -49,7 +49,7 @@
     transform: translateX(0px);
     transition: transform 250ms linear, opacity 250ms linear;
     opacity: 1;
-    z-index: 1;
+    z-index: 5;
   }
 
   &__logo {

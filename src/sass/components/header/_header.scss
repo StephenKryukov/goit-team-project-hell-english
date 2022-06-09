@@ -10,9 +10,14 @@
       height: 29px;
     }
 
-    @media screen and (min-width: 1680px) {
+    @media screen and (min-width: 768px) {
       width: 128px;
       height: 45px;
+    }
+
+    @media screen and (min-width: 1680px) {
+      width: 160px;
+      height: 60px;
     }
 
     transition: opacity 100ms linear;
@@ -194,15 +199,27 @@
 }
 
 .theme-toggle {
+  width: 50px;
+  height: 50px;
+
   display: none;
+
   background-color: transparent;
   border: none;
+  border-radius: 50%;
   padding: 0;
+  cursor: pointer;
+  transition: color 200ms linear, background-color 200ms linear;
 
   @media screen and (min-width: 1680px) {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+  }
+
+  &:hover {
+    color: white;
+    background-color: #111518;
   }
 }
 
@@ -214,8 +231,13 @@
   color: $primary-white-color;
   background-color: #ffffff20;
   border-radius: 50%;
-  width: 34px;
-  height: 34px;
+  transition: color 200ms linear, background-color 200ms linear;
+
+  &:hover {
+    color: #111518;
+    background-color: $primary-white-color;
+    border-radius: 50%;
+  }
 }
 
 .theme-toggle.is-open-button .toggle-off {

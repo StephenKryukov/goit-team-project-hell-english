@@ -161,3 +161,21 @@
     darkThemeGarantee3.classList.toggle('dark-theme-garantee');
   });
 })();
+
+(() => {
+  const openMobileModalButton = document.querySelector('[mobile-modal]');
+  const bodyNoScroll = document.querySelector('[body-no-scroll]');
+
+  openMobileModalButton.addEventListener('click', () => {
+    bodyNoScroll.classList.toggle('no-scroll');
+  });
+})();
+
+(() => {
+  const openMobileModalButton2 = document.querySelector('[mobile-modal2]');
+  const bodyNoScroll = document.querySelector('[body-no-scroll]');
+
+  openMobileModalButton2.addEventListener('click', () => {
+    bodyNoScroll.classList.toggle('no-scroll');
+  });
+})();
