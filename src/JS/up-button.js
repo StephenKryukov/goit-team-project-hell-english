@@ -8,9 +8,10 @@
     if (scrolled > 200) {
       goTopBtn.classList.add('back_to_top-show');
     }
+
     if (scrolled < 200) {
       goTopBtn.classList.remove('back_to_top-show');
-    }
+  
   }
 
   function backToTop() {

@@ -13,24 +13,24 @@
         left: 0;
         bottom: 0;
         right: 0;
-        background-image: url(../images/contacts/contacts-mobile-1x.jpg);
+        background-image: url(../images/contacts/contacts-mobile-1x-min.jpg);
         background-position: center;
         background-size: cover;
         @media (min-resolution: 2dppx) {
-            background-image: url(../images/contacts/contacts-mobile-2x.jpg);
+            background-image: url(../images/contacts/contacts-mobile-2x-min.jpg);
         }
         @include mobile {
             width: 100%;
-            background-image: url(../images/contacts/contacts-tablet-1x.jpg);
+            background-image: url(../images/contacts/contacts-tablet-1x-min.jpg);
             @media (min-resolution: 2dppx) {
-                background-image: url(../images/contacts/contacts-tablet-2x.jpg);
+                background-image: url(../images/contacts/contacts-tablet-2x-min.jpg);
             }
         }
         @include desktop {
             width: 100%;
-            background-image: url(../images/contacts/contacts-desktop-1x.jpg);
+            background-image: url(../images/contacts/contacts-desktop-1x-min.jpg);
             @media (min-resolution: 2dppx) {
-                background-image: url(../images/contacts/contacts-desktop-2x.jpg);
+                background-image: url(../images/contacts/contacts-desktop-2x-min.jpg);
             }
         }
     }
@@ -137,6 +137,15 @@
         &::placeholder {
         color: $primary-white-color;
         }
+        &:hover, &:focus {
+            border-color: $accent-color;
+        } 
+        &:focus:required:invalid {
+            border: 3px solid #e03202;
+        }
+        &:focus:required:valid {
+            border: 1px solid #4cb44c;
+        }
         
 
         @include desktop {
@@ -147,9 +156,9 @@
         
         }
         &:not(:placeholder-shown):required:invalid {
-            border-color: #e73f3f;
-            box-shadow: 1px 5px 5px #e73f3f;
+            border: 3px solid #e03202;
         }
+        transition: border 250ms;
     }
     &__button {
         border: none;
