@@ -108,6 +108,10 @@
             font-size: 30px;
         }
     }
+
+    &__description--form{
+        text-align: center;
+    }
     &__form {
         display:flex;
         flex-direction: column;
