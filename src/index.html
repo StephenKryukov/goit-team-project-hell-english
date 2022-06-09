@@ -12,6 +12,14 @@
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
+    <script src="./JS/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
+    />
 
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap"
@@ -30,6 +38,7 @@
       <include src="./partials/header.html"></include>
       <include src="./partials/hero.html"></include>
     </div>
+    <include src="./partials/up-button.html"></include>
     <include src="./partials/advantages.html"></include>
     <include src="./partials/problems.html"></include>
     <include src="./partials/how-we-do-it.html"></include>
@@ -43,8 +52,12 @@
 
     <!-- Скрипты -->
     <script src="./index.js" type="module"></script>
-    <script src="./modal.js"></script>
+    <script src="./JS/modal.js"></script>
+    <script src="./JS/modal-form.js"></script>
+    <script src="./JS/modal-form-mobile.js"></script>
+    <script src="./dark-theme.js"></script>
     <script src="./JS/header-menu.js"></script>
     <script src="./JS/menu-btn.js"></script>
+    <script src="./JS/up-button.js"></script>
   </body>
 </html>

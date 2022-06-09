@@ -10,7 +10,7 @@
       height: 29px;
     }
 
-    @media screen and (max-width: 1680px) {
+    @media screen and (min-width: 1680px) {
       width: 128px;
       height: 45px;
     }
@@ -70,6 +70,12 @@
     text-transform: uppercase;
     color: $accent-color;
     cursor: pointer;
+
+    &:hover {
+      background-color: $accent-color;
+      color: $primary-white-color;
+      transition: background-color 250ms linear, color 250ms linear;
+    }
     @media screen and (max-width: 767px) {
       width: 100%;
 
@@ -78,6 +84,12 @@
       font-size: 12px;
       line-height: 1.25;
       letter-spacing: 0.08em;
+
+      &:hover {
+        color: $accent-color;
+        background-color: $primary-white-color;
+        transition: background-color 250ms linear;
+      }
     }
     @media screen and (min-width: 768px) and (max-width: 1679px) {
       display: none;
@@ -85,6 +97,7 @@
 
     @media screen and (min-width: 1680px) {
       padding: 26px 24px;
+      margin-right: 40px;
 
       font-size: 14px;
       line-height: 1.214;
@@ -151,8 +164,64 @@
     line-height: 1.214;
     letter-spacing: 0.14em;
 
+    &:hover {
+      background-color: $accent-color;
+      color: $primary-white-color;
+    }
+
+    transition: background-color 250ms linear, color 250ms linear;
+
     @media screen and (min-width: 1680px) {
       display: none;
     }
   }
+}
+
+// Dark theme
+
+.dark-theme-logo {
+  display: none;
+}
+
+.page-header__logo-dark-theme {
+  display: none;
+
+  &.is-open {
+    display: block;
+    width: 128px;
+    height: 45px;
+  }
+}
+
+.theme-toggle {
+  display: none;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+
+  @media screen and (min-width: 1680px) {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.toggle-off {
+  display: none;
+}
+
+.theme-toggle.is-open-button {
+  color: $primary-white-color;
+  background-color: #ffffff20;
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+}
+
+.theme-toggle.is-open-button .toggle-off {
+  display: inline-flex;
+}
+
+.theme-toggle.is-open-button .toggle-on {
+  display: none;
 }

@@ -1,11 +1,45 @@
 
+.footer-contact__container {
+  @extend %container;
+}
 .footer-contact {
-    padding: 40px 0;
-    width: 100%;
+  padding: 40px 0;
+  width: 100%;
+  height: 208px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  @include tablet {
+    flex-direction: unset;
+    padding-top: 0;
+  }
+  &__logo {
     display: flex;
-    align-items: center;
-    flex-direction: column;
+    height: 29px;
+    width: 80px;
+    margin-bottom: 20px;
+    cursor: pointer;
+
     @include tablet {
+      width: 128px;
+      height: 45px;
+      margin-bottom: 0;
+    }
+  }
+  .footer-logo__icon {
+    width: 80px;
+    @include tablet {
+      width: 128px;
+      height: 45px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include tablet {
+
         flex-direction: unset;
         
     }
@@ -14,72 +48,42 @@
     }
     &__container {
         @extend %container;
+
     }
-    &__logo {
-        display: flex;
-        height: 29px;
-        width: 80px;  
-        margin-bottom: 20px;
-        cursor: pointer;
-        
-        @include tablet {
-            width: 128px;
-            height: 45px;
-            margin-bottom: 0;
-        }
-        
+    @include desktop {
+      margin-left: 452px;
     }
-    .footer-logo__icon {
-        width: 80px;
-        @include tablet {
-            width: 128px;
-            height: 45px;
-        }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    @include font(600, 14px, 1.21, 0.08em);
+    color: $primary-text-color;
+    @include tablet {
+      font-size: 20px;
     }
-    
-    &__list {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        @include tablet {
-            flex-direction: unset;
-            margin-left: auto;
-        }
-        @include desktop {
-            margin-left: 452px;
-        }
+    @include desktop {
+      font-size: 30px;
     }
-    
-    &__link {
-        display: flex;
-        align-items: center;
-        @include font (600, 14px, 1.21, 0.08em);
-        color: $primary-text-color;
-        @include tablet {
-            font-size: 20px;
-        }
-        @include desktop {
-            font-size: 30px;
-        }
-        &--insta {
-            width: 40px;
-            height: 40px;
-        }
+    &--insta {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  &__icon--phone {
+    margin-right: 8px;
+    fill: $accent-color;
+    width: 20px;
+    @include tablet {
+      width: 24px;
+    }
+    @include desktop {
+      width: 30px;
+      margin-right: 16px;
     }
 
-    &__icon--phone {
-        margin-right: 8px;
-        fill: $accent-color;
-        width: 20px;
-        @include tablet {
-            width: 24px;
-        }
-        @include desktop {
-            width: 30px;
-            margin-right: 16px;
-        }
-        
-    }
     &__item--insta {
         display: flex;
         position: relative;
@@ -108,22 +112,47 @@
             }
         }
     }
-    
-    
+    &::before {
+      display: none;
+      position: absolute;
+      content: '';
+      width: 0px;
+      height: 40px;
+      top: 0;
+      left: -20px;
+      border: 1px solid $secondary-text-color;
+      @include tablet {
+        display: unset;
+      }
+    }
+  }
 }
-
 
 .footer-bottom {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 80px;
-    background-color: $primary-text-color;
-    &__discription {
-        @include font (500, 14px, 2, null);
-        color: $secondary-text-color;
-        }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  background-color: $primary-text-color;
+  &__discription {
+    @include font(500, 14px, 2, null);
+    color: $secondary-text-color;
+  }
 }
 
+// ---- Dark Theme
 
+.footer-logo__link {
+  display: block;
+}
 
+.footer-logo__link-dark-theme {
+  display: none;
+}
+.footer-logo__link-dark-theme.is-open {
+  display: block;
+}
+
+.dark-theme-logo {
+  display: none;
+}
