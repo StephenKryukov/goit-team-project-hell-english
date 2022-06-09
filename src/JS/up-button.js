@@ -15,7 +15,7 @@
   
     function backToTop() {
       if (window.pageYOffset > 0) {
-        window.scrollBy(1, -50);
+        window.scrollBy(1, -60);
         setTimeout(backToTop, 0);
       }
     }
