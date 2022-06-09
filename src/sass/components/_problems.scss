@@ -118,6 +118,7 @@
 .problems.dark-theme {
   position: relative;
   background-image: url(../images/problems/svg/burn-bg.svg);
+  background-repeat: no-repeat;
   @media screen and (min-width: 1680px) {
   }
 }
