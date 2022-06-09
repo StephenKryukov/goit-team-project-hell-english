@@ -69,6 +69,7 @@
       &:hover, &:focus {
         color: $accent-color;
       }
+      transition: color 250ms linear;
   }
 
   &__icon--phone {
