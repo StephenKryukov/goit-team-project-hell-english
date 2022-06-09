@@ -75,16 +75,16 @@
     text-transform: uppercase;
     color: $accent-color;
     cursor: pointer;
+    transition: background-color 250ms linear, color 250ms linear;
 
     &:hover {
       background-color: $accent-color;
       color: $primary-white-color;
-      transition: background-color 250ms linear, color 250ms linear;
     }
     @media screen and (max-width: 767px) {
       width: 100%;
 
-      padding: 20px 45px;
+      padding: 20px 33px;
 
       font-size: 12px;
       line-height: 1.25;
