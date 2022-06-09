@@ -147,7 +147,8 @@
         
         }
         &:not(:placeholder-shown):required:invalid {
-            border: 3px solid #e03202;
+            border-color: #e73f3f;
+            box-shadow: 1px 5px 5px #e73f3f;
         }
     }
     &__button {
