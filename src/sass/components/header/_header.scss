@@ -201,12 +201,20 @@
 .theme-toggle {
   width: 50px;
   height: 50px;
-
+  margin-left: 20px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   @media screen and(max-width:1679px) {
-    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    color: #111518;
+  }
+  @include desktop {
+    position: fixed;
+    right: 43px;
+    top: 54px;
   }
   background-color: transparent;
   border: none;
@@ -215,16 +223,10 @@
   cursor: pointer;
   transition: color 200ms linear, background-color 200ms linear;
 
-  // @media screen and (min-width: 1680px) {
-  //   display: inline-flex;
-  //   align-items: center;
-  //   justify-content: center;
+  // &:hover {
+  //   color: white;
+  //   background-color: #111518;
   // }
-
-  &:hover {
-    color: white;
-    background-color: #111518;
-  }
 }
 
 .toggle-off {
@@ -250,4 +252,18 @@
 
 .theme-toggle.is-open-button .toggle-on {
   display: none;
+}
+
+.toggle-on {
+  @media screen and(max-width:1679px) {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+.toggle-off {
+  @media screen and(max-width:1679px) {
+    width: 22px;
+    height: 22px;
+  }
 }
