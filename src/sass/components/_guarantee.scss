@@ -67,6 +67,11 @@
   &:last-child::before {
     bottom: 23px;
   }
+  @include untilTablet {
+    &:last-child::before {
+      bottom: 61px;
+    }
+  }
 }
 
 .guarantee__text {
@@ -87,7 +92,7 @@
   &:before {
     content: '';
     position: absolute;
-    height: 282px;
+    height: 244px;
     top: 25px;
     left: -25px;
     border-left: 1px dashed #b9b9b9;

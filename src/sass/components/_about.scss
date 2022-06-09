@@ -97,6 +97,7 @@
     top: 2px;
     position: absolute;
     display: inline-block;
+    background-repeat: no-repeat;
     width: 18px;
     height: 14px;
     background-size: contain;
@@ -161,6 +162,16 @@
   text-decoration-line: underline;
   text-decoration: underline;
   color: $accent-color;
+
+  &:hover {
+    @include tablet {
+      font-size: 14px;
+    }
+
+    @include desktop {
+      font-size: 20px;
+    }
+  }
 
   @include tablet {
     font-size: 12px;
