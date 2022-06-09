@@ -57,11 +57,12 @@
                 <input
                   class="contacts__input"
                   type="text"
-                  name=""
-                  id=""
+                  name="name"
+                  id="name"
                   placeholder="Name*"
                   minlength="2"
                   required
+                  oninvalid="this.setCustomValidity('Please enter Your name')" oninput="setCustomValidity('')"
                 />
               </label>
               <label class="contacts__label" for="">
@@ -72,7 +73,8 @@
                   id=""
                   placeholder="Phone*"
                   required
-                  title="0671111111"
+                  oninvalid="this.setCustomValidity('Please enter you phone number in format 0671112233')" oninput="setCustomValidity('')"
+                  title="0671112233"
                   pattern="\+?[0-9\s\-\(\)]+"
                   minlength="10"
                   maxlength="10"/>
