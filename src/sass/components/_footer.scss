@@ -69,22 +69,30 @@
       &:hover, &:focus {
         color: $accent-color;
       }
+      &:hover .footer-contact__icon--phone {
+        fill: $primary-text-color;
+    }
       transition: color 250ms linear;
   }
+  
+  
 
   &__icon--phone {
       margin-right: 8px;
       fill: $accent-color;
       width: 20px;
+      transition: fill 250ms linear;
       @include tablet {
           width: 24px;
       }
       @include desktop {
           width: 30px;
           margin-right: 16px;
+          
       }
       
   }
+
   &__item--insta {
       display: flex;
       position: relative;
