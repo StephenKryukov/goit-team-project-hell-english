@@ -251,6 +251,13 @@
   }
 }
 
+.program.dark-theme .program__container .program__block .program__picture {
+  @media screen and (min-width: 1680px) {
+    bottom: -193px;
+    left: -50px;
+  }
+}
+
 .list__title {
   @extend %container__title;
   color: $primary-white-color;
