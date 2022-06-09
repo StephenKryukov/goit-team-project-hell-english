@@ -118,7 +118,13 @@
 .problems.dark-theme {
   position: relative;
   background-image: url(../images/problems/svg/burn-bg.svg);
+<<<<<<< Updated upstream
   background-repeat: no-repeat;
   @media screen and (min-width: 1680px) {
+=======
+  @include tablet {
+    background-repeat: no-repeat;
+    background-position: top right;
+>>>>>>> Stashed changes
   }
 }

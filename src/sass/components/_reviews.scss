@@ -3,6 +3,7 @@
 
   &__container {
     @extend %container;
+
     @media screen and (min-width: $tablet) {
       box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
     }
@@ -12,6 +13,10 @@
     @media screen and (min-width: $desktop) {
       padding-left: 200px;
       padding-right: 200px;
+      padding-top: 40px;
+    }
+    &.dark-theme-shadow {
+      background-color: white;
       padding-top: 40px;
     }
   }
@@ -223,5 +228,11 @@
   @media screen and (min-width: 1680px) {
     background-color: $primary-white-color;
     padding-top: 40px;
+  }
+}
+
+.reviews__container.dark-theme-shadow .reviews__title {
+  @include tablet {
+    margin-bottom: 50px;
   }
 }
