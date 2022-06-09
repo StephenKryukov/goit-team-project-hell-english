@@ -158,6 +158,7 @@
         &:not(:placeholder-shown):required:invalid {
             border: 3px solid #e03202;
         }
+        transition: border 250ms;
     }
     &__button {
         border: none;
