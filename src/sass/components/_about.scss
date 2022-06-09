@@ -83,7 +83,7 @@
 .teacher__list {
   margin-bottom: 40px;
   @media screen and (min-width: 768px) {
-    margin-bottom: 70px;
+    margin-bottom: 50px;
   }
   @include desktop {
     width: 530px;
@@ -128,10 +128,10 @@
   }
 }
 
-// .regular-before::before {
-//   margin-bottom: 20px;
-//   @extend %regular-before;
-// }
+.regular-before::before {
+  margin-bottom: 20px;
+  @extend %regular-before;
+}
 
 .about__text {
   font-weight: 500;
