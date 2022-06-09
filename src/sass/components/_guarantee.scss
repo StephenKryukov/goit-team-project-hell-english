@@ -67,9 +67,15 @@
   &:last-child::before {
     bottom: 23px;
   }
+
   @include untilTablet {
     &:last-child::before {
       bottom: 61px;
+    }
+  }
+  @include desktop {
+    &:last-child::before {
+      bottom: 33px;
     }
   }
 }
