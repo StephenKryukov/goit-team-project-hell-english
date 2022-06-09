@@ -97,6 +97,7 @@
 
     @media screen and (min-width: 1680px) {
       padding: 26px 24px;
+      margin-right: 40px;
 
       font-size: 14px;
       line-height: 1.214;
@@ -174,4 +175,53 @@
       display: none;
     }
   }
+}
+
+// Dark theme
+
+.dark-theme-logo {
+  display: none;
+}
+
+.page-header__logo-dark-theme {
+  display: none;
+
+  &.is-open {
+    display: block;
+    width: 128px;
+    height: 45px;
+  }
+}
+
+.theme-toggle {
+  display: none;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+
+  @media screen and (min-width: 1680px) {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.toggle-off {
+  display: none;
+}
+
+.theme-toggle.is-open-button {
+  color: $primary-white-color;
+  background-color: #ffffff20;
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+}
+
+.theme-toggle.is-open-button .toggle-off {
+  display: inline-flex;
+}
+
+.theme-toggle.is-open-button .toggle-on {
+  display: none;
 }
