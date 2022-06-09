@@ -1,24 +1,24 @@
 // ---- Фон
 (() => {
-  const darkTheme = document.querySelector('[dark-theme]');
-  const darkTheme1 = document.querySelector('[dark-theme1]');
-  const darkTheme2 = document.querySelector('[dark-theme2]');
-  const darkTheme3 = document.querySelector('[dark-theme3]');
-  const darkTheme4 = document.querySelector('[dark-theme4]');
-  const darkTheme5 = document.querySelector('[dark-theme5]');
-  const darkTheme6 = document.querySelector('[dark-theme6]');
-  const darkTheme7 = document.querySelector('[dark-theme7]');
-  const darkTheme8 = document.querySelector('[dark-theme8]');
-  const darkTheme9 = document.querySelector('[dark-theme9]');
-  const darkTheme10 = document.querySelector('[dark-theme10]');
-  const darkTheme11 = document.querySelector('[dark-theme11]');
-  const darkTheme12 = document.querySelector('[dark-theme12]');
-  const darkTheme13 = document.querySelector('[dark-theme13]');
-  const darkTheme14 = document.querySelector('[dark-theme14]');
-  const darkTheme15 = document.querySelector('[dark-theme15]');
-  const darkTheme16 = document.querySelector('[dark-theme16]');
-  const darkTheme17 = document.querySelector('[dark-theme17]');
-  const darkThemeButton = document.querySelector('[dark-theme-button]');
+  const darkTheme = document.querySelector('[data-dark-theme]');
+  const darkTheme1 = document.querySelector('[data-dark-theme1]');
+  const darkTheme2 = document.querySelector('[data-dark-theme2]');
+  const darkTheme3 = document.querySelector('[data-dark-theme3]');
+  const darkTheme4 = document.querySelector('[data-dark-theme4]');
+  const darkTheme5 = document.querySelector('[data-dark-theme5]');
+  const darkTheme6 = document.querySelector('[data-dark-theme6]');
+  const darkTheme7 = document.querySelector('[data-dark-theme7]');
+  const darkTheme8 = document.querySelector('[data-dark-theme8]');
+  const darkTheme9 = document.querySelector('[data-dark-theme9]');
+  const darkTheme10 = document.querySelector('[data-dark-theme10]');
+  const darkTheme11 = document.querySelector('[data-dark-theme11]');
+  const darkTheme12 = document.querySelector('[data-dark-theme12]');
+  const darkTheme13 = document.querySelector('[data-dark-theme13]');
+  const darkTheme14 = document.querySelector('[data-dark-theme14]');
+  const darkTheme15 = document.querySelector('[data-dark-theme15]');
+  const darkTheme16 = document.querySelector('[data-dark-theme16]');
+  const darkTheme17 = document.querySelector('[data-dark-theme17]');
+  const darkThemeButton = document.querySelector('[data-dark-theme-button]');
 
   darkThemeButton.addEventListener('click', () => {
     darkThemeButton.classList.toggle('is-open-button');
@@ -70,7 +70,7 @@
   const darkThemeText20 = document.querySelector('[data-theme-text20]');
   const darkThemeText21 = document.querySelector('[data-theme-text21]');
   const darkThemeText22 = document.querySelector('[data-theme-text22]');
-  const darkThemeButton = document.querySelector('[dark-theme-button]');
+  const darkThemeButton = document.querySelector('[data-dark-theme-button]');
 
   darkThemeButton.addEventListener('click', () => {
     darkThemeText.classList.toggle('dark-theme-text');
@@ -102,17 +102,17 @@
 // ----- Тени
 
 (() => {
-  const darkThemeShadow = document.querySelector('[dark-theme-shadow]');
-  const darkThemeShadow1 = document.querySelector('[dark-theme-shadow1]');
-  const darkThemeShadow2 = document.querySelector('[dark-theme-shadow2]');
-  const darkThemeShadow3 = document.querySelector('[dark-theme-shadow3]');
-  const darkThemeShadow4 = document.querySelector('[dark-theme-shadow4]');
-  const darkThemeShadow5 = document.querySelector('[dark-theme-shadow5]');
-  const darkThemeShadow6 = document.querySelector('[dark-theme-shadow6]');
-  const darkThemeShadow7 = document.querySelector('[dark-theme-shadow7]');
-  const darkThemeShadow8 = document.querySelector('[dark-theme-shadow8]');
-  const darkThemeShadow9 = document.querySelector('[dark-theme-shadow9]');
-  const darkThemeButton = document.querySelector('[dark-theme-button]');
+  const darkThemeShadow = document.querySelector('[data-dark-theme-shadow]');
+  const darkThemeShadow1 = document.querySelector('[data-dark-theme-shadow1]');
+  const darkThemeShadow2 = document.querySelector('[data-dark-theme-shadow2]');
+  const darkThemeShadow3 = document.querySelector('[data-dark-theme-shadow3]');
+  const darkThemeShadow4 = document.querySelector('[data-dark-theme-shadow4]');
+  const darkThemeShadow5 = document.querySelector('[data-dark-theme-shadow5]');
+  const darkThemeShadow6 = document.querySelector('[data-dark-theme-shadow6]');
+  const darkThemeShadow7 = document.querySelector('[data-dark-theme-shadow7]');
+  const darkThemeShadow8 = document.querySelector('[data-dark-theme-shadow8]');
+  const darkThemeShadow9 = document.querySelector('[data-dark-theme-shadow9]');
+  const darkThemeButton = document.querySelector('[data-dark-theme-button]');
 
   darkThemeButton.addEventListener('click', () => {
     darkThemeShadow.classList.toggle('dark-theme-shadow');
@@ -131,11 +131,11 @@
 // --- Логотип
 
 (() => {
-  const darkThemeLogo = document.querySelector('[dark-theme-logo]');
-  const darkThemeLogo2 = document.querySelector('[dark-theme-logo-two]');
-  const darkThemeLogo3 = document.querySelector('[dark-theme-logo3]');
-  const darkThemeLogo4 = document.querySelector('[dark-theme-logo4]');
-  const darkThemeButton = document.querySelector('[dark-theme-button]');
+  const darkThemeLogo = document.querySelector('[data-dark-theme-logo]');
+  const darkThemeLogo2 = document.querySelector('[data-dark-theme-logo-two]');
+  const darkThemeLogo3 = document.querySelector('[data-dark-theme-logo3]');
+  const darkThemeLogo4 = document.querySelector('[data-dark-theme-logo4]');
+  const darkThemeButton = document.querySelector('[data-dark-theme-button]');
 
   darkThemeButton.addEventListener('click', () => {
     darkThemeLogo.classList.toggle('dark-theme-logo');
@@ -148,11 +148,19 @@
 // --- Текст в секции We Garantee
 
 (() => {
-  const darkThemeGarantee = document.querySelector('[dark-theme-garantee]');
-  const darkThemeGarantee1 = document.querySelector('[dark-theme-garantee1]');
-  const darkThemeGarantee2 = document.querySelector('[dark-theme-garantee2]');
-  const darkThemeGarantee3 = document.querySelector('[dark-theme-garantee3]');
-  const darkThemeButton = document.querySelector('[dark-theme-button]');
+  const darkThemeGarantee = document.querySelector(
+    '[data-dark-theme-garantee]'
+  );
+  const darkThemeGarantee1 = document.querySelector(
+    '[data-dark-theme-garantee1]'
+  );
+  const darkThemeGarantee2 = document.querySelector(
+    '[data-dark-theme-garantee2]'
+  );
+  const darkThemeGarantee3 = document.querySelector(
+    '[data-dark-theme-garantee3]'
+  );
+  const darkThemeButton = document.querySelector('[data-dark-theme-button]');
 
   darkThemeButton.addEventListener('click', () => {
     darkThemeGarantee.classList.toggle('dark-theme-garantee');
@@ -163,19 +171,19 @@
 })();
 
 (() => {
-  const openMobileModalButton = document.querySelector('[mobile-modal]');
-  const bodyNoScroll = document.querySelector('[body-no-scroll]');
+  const openMobileModalButton2 = document.querySelector('[data-mobile-modal2]');
+  const bodyNoScroll = document.querySelector('[data-body-no-scroll]');
 
-  openMobileModalButton.addEventListener('click', () => {
+  openMobileModalButton2.addEventListener('click', () => {
     bodyNoScroll.classList.toggle('no-scroll');
   });
 })();
 
 (() => {
-  const openMobileModalButton2 = document.querySelector('[mobile-modal2]');
-  const bodyNoScroll = document.querySelector('[body-no-scroll]');
+  const bodyNoScroll = document.querySelector('[data-body-no-scroll]');
+  const closeMobileModalButton = document.querySelector('[data-close-modal]');
 
-  openMobileModalButton2.addEventListener('click', () => {
+  closeMobileModalButton.addEventListener('click', () => {
     bodyNoScroll.classList.toggle('no-scroll');
   });
 })();
