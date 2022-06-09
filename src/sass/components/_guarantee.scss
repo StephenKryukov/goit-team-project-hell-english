@@ -1,17 +1,25 @@
-.guarantee {
-  background-image: linear-gradient(to top, #f1f1f1 84%, #fbfbfb 84%);
-  padding-top: 0;
+.guarantee__section {
+  @include untilTablet {
+    background-image: linear-gradient(#fbfbfb 16%, #f1f1f1 16%);
+  }
   @include tablet {
-    background-image: linear-gradient(to top, #f1f1f1 80%, #fbfbfb 80%);
+    padding: 40px 0;
   }
   @include desktop {
-    background-image: linear-gradient(to top, #f1f1f1 84%, #fbfbfb 84%);
     padding-bottom: 60px;
   }
 }
 
 .guarantee__wrap {
-  padding-top: 40px;
+  background-color: #f1f1f1;
+  padding: 60px 0;
+  @include untilTablet {
+    padding-left: 21px;
+    // background-color: transparent;
+  }
+  @include tablet {
+    padding: 32px 58px 32px 87px;
+  }
 }
 
 .title-wrap {
@@ -22,7 +30,7 @@
 .guarantee__list {
   position: relative;
   @include desktop {
-    max-width: 1090px;
+    width: 1090px;
     margin: 0 auto;
   }
 }
@@ -56,6 +64,9 @@
     height: 20px;
     background-image: url(../images/icons/fire-icon.svg);
   }
+  &:last-child::before {
+    bottom: 23px;
+  }
 }
 
 .guarantee__text {
@@ -76,17 +87,17 @@
   &:before {
     content: '';
     position: absolute;
-    height: 240px;
+    height: 282px;
     top: 25px;
     left: -25px;
     border-left: 1px dashed #b9b9b9;
 
     @include tablet {
-      height: 126px;
+      height: 165px;
     }
 
     @include desktop {
-      height: 185px;
+      height: 198px;
     }
   }
 }
