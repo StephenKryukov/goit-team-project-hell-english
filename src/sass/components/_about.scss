@@ -163,6 +163,16 @@
   text-decoration: underline;
   color: $accent-color;
 
+  &:hover {
+    @include tablet {
+      font-size: 14px;
+    }
+
+    @include desktop {
+      font-size: 20px;
+    }
+  }
+
   @include tablet {
     font-size: 12px;
     line-height: 1.56;
