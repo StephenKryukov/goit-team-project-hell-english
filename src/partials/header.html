@@ -4,7 +4,7 @@
         <a href="./index.html"><img src="./images/program/logo.svg" alt="Логотип" class="page-header__logo" header-logo dark-theme-logo/></a>
         <a href="./index.html"><img src="./images/program/logo-mobile-menu.svg" alt="Логотип" class="page-header__logo-dark-theme" dark-theme-logo-two/></a>
         <button type="button" class="page-header__tub-button" data-modal-open_form-mobile >consultation by phone</button>
-        <button type="button" class="menu-button" data-menu-button aria-expanded="false" aria-controls="mobile-menu"> 
+        <button type="button" class="menu-button" data-menu-button aria-expanded="false" aria-controls="mobile-menu" mobile-modal> 
               <svg width="22" height="12">
                 <use href="./images/spite.svg#icon-menu" class="page-header__icon-menu"></use>
               </svg>
@@ -12,17 +12,17 @@
         </div>
         <div class="mobile-menu" data-menu id="mobile-menu">
           <a href="./index.html"><img src="./images/program/logo-mobile-menu.svg" alt="Логотип" class="mobile-menu__logo"></a>
-          <button type="button" close-btn class="mobile-menu__button" aria-controls="mobile-menu">
+          <button type="button" close-btn class="mobile-menu__button" aria-controls="mobile-menu" mobile-modal2>
             <svg width="16" height="16" class="page-header__icon-close">
                 <use href="./images/spite.svg#icon-close"></use>
               </svg>
           </button>
           <nav class="page-header__navigation">
-            <ul class="page-header__list">
+            <ul class="page-header__list" data-ul-list>
               <li class="page-header__item"><a href="#program" class="page-header__link">Studying program</a></li>
               <li class="page-header__item"><a href="#about" class="page-header__link">About</a></li>
               <li class="page-header__item"><a href="#training-option" class="page-header__link">Training options</a></li>
-              <li class="page-header__item"><a href="" class="page-header__link">Contacts</a></li>
+              <li class="page-header__item"><a href="#contacts" class="page-header__link">Contacts</a></li>
             </ul>
           </nav>
       <button type="button" class="page-header__button" data-modal-open_form >consultation by phone</button>
