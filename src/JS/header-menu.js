@@ -1,7 +1,7 @@
 (() => {
   const menuBtnRef = document.querySelector('[data-menu-button]');
   const mobileMenuRef = document.querySelector('[data-menu]');
-  const headerLogoRef = document.querySelector('[header-logo]');
+  const headerLogoRef = document.querySelector('[data-header-logo]');
 
   menuBtnRef.addEventListener('click', () => {
     const expanded =
@@ -20,9 +20,11 @@
 
   const mobileMenu = document.querySelector('[data-menu]');
   const menuBtnRef = document.querySelector('[data-menu-button]');
-  const headerLogoRef = document.querySelector('[header-logo]');
+  const headerLogoRef = document.querySelector('[data-header-logo]');
+  const bodyNoScroll = document.querySelector('[data-body-no-scroll2]');
 
   ulList.addEventListener('click', () => {
+    bodyNoScroll.classList.remove('no-scroll');
     mobileMenu.classList.remove('is-open');
     menuBtnRef.classList.remove('is-open');
     headerLogoRef.classList.remove('is-open');
