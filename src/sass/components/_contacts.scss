@@ -134,6 +134,13 @@
             border: 3px solid #e03202;
         }
     }
+    &:not(:placeholder-shown):required {
+        border: 3px solid #e03202;
+    }
+
+    &__button:hover + &__input:required:invalid {
+        border: 3px solid #e03202;
+    }
     &__button {
         border: none;
         cursor: pointer;
