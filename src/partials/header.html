@@ -1,15 +1,27 @@
 <header class="page-header" data-dark-theme>
       <div class="container page-header__container">
+        <div class="toggle-wrapper">
+                  <button type="button" class="theme-toggle" data-dark-theme-button >
+        <svg viewBox="0 0 24 24"  class="toggle-on">
+          <use href="./images/spite.svg#toggle-on"></use>
+        </svg>
+        <svg viewBox="0 0 24 24"  class="toggle-off">
+          <use href="./images/spite.svg#toggle-off"></use>
+        </svg>
+      </button>
+        </div>
       <div class="flex-wrapper header__flex-wrap">
         <a href="./index.html"><img src="./images/program/logo.svg" alt="Логотип" class="page-header__logo" data-header-logo data-dark-theme-logo/></a>
         <a href="./index.html"><img src="./images/program/logo-mobile-menu.svg" alt="Логотип" class="page-header__logo-dark-theme" data-dark-theme-logo-two/></a>
+        </div>
+                <div class="btn-wrapper">
         <button type="button" class="page-header__tub-button" data-modal-open_form-mobile >consultation by phone</button>
         <button type="button" class="menu-button" data-menu-button aria-expanded="false" aria-controls="mobile-menu" data-mobile-modal data-mobile-modal2>  
               <svg width="22" height="12">
                 <use href="./images/spite.svg#icon-menu" class="page-header__icon-menu"></use>
               </svg>
         </button>
-        </div>
+      </div>
         <div class="mobile-menu" data-menu id="mobile-menu">
           <a href="./index.html"><img src="./images/program/logo-mobile-menu.svg" alt="Логотип" class="mobile-menu__logo"></a>
           <button type="button" data-close-btn class="mobile-menu__button" aria-controls="mobile-menu" data-close-modal> 
@@ -26,14 +38,6 @@
             </ul>
           </nav>
       <button type="button" class="page-header__button" data-modal-open_form >consultation by phone</button>
-      <button type="button" class="theme-toggle" data-dark-theme-button >
-        <svg viewBox="0 0 24 24" width="30" height="30" class="toggle-on">
-          <use href="./images/spite.svg#toggle-on"></use>
-        </svg>
-        <svg viewBox="0 0 24 24" width="30" height="30" class="toggle-off">
-          <use href="./images/spite.svg#toggle-off"></use>
-        </svg>
-      </button>
       </div>
 
       <div class="backdrop is-hidden_form" data-modal_form data-modal_form-mobile>

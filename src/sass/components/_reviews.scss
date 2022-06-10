@@ -233,6 +233,13 @@
 
 .reviews__container.dark-theme-shadow .reviews__title {
   @include tablet {
-    margin-bottom: 50px;
+    margin-bottom: 69px;
+    box-shadow: 0 7px 7px -8px, 0 -8px 4px -11px, 10px 12px 16px -1px;
+    font-size: 34px;
+
+    background-color: #2aa5a0;
+    background-image: linear-gradient(20deg, black 48%, #ff6b09 5%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 }
