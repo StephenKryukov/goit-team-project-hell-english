@@ -139,9 +139,11 @@
   .guarantee__list
   .guarantee__item
   .guarantee__text::before {
-  height: 287px;
-  top: 48px;
-  left: -4px;
+  @include untilTablet {
+    height: 287px;
+    top: 48px;
+    left: -4px;
+  }
 }
 
 // content: "";
